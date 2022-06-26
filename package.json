@@ -1,0 +1,11 @@
+{
+  "name": "typescript-journey",
+  "version": "1.0.0",
+  "description": "repo saya belajar typescript",
+  "main": "index.ts",
+  "author": "najmi",
+  "license": "ISC",
+  "scripts": {
+    "tsc" : "rm -rf ./dist/* && tsc"
+  }
+}
