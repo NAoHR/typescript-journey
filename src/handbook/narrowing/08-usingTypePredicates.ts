@@ -43,10 +43,12 @@ function isUser(person: Person) : person is User {
 
 function logPerson(person: Person) {
     let additionalInformation: string = '';
-    if (isAdmin(person)) {
+    if (isAdmin(person)) { // memastikan person adalah admin
+        // akan me-narrow ke admin
         additionalInformation = person.role;
     }
-    if (isUser(person)) {
+    if (isUser(person)) { // memastikan person adalah user
+        // akan me-narrow ke user
         additionalInformation = person.occupation;
     }
     console.log(` - ${person.name}, ${person.age}, ${additionalInformation}`);
